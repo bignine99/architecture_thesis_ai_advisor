@@ -306,3 +306,36 @@ Phase 2 (채점): "이 논문은 80-85점 수준 논문과 비교하면?" 상대
   - `showModal`, `pw`, `pwError`, `shaking` state 추가
   - `handlePwSubmit()` 함수 추가
   - Lucide import: `Lock`, `GraduationCap` 추가, `BookOpen` 제거
+
+---
+
+## Phase 10. GitHub 배포 및 NCP 서버 배포 (2026-02-21)
+
+### 10-1. GitHub 저장소 초기화
+- 저장소: `https://github.com/bignine99/architecture_thesis_ai_advisor`
+- `.gitignore` 정비: `backend/venv/`, `data/`, `backend/.env` 제외
+- `backend/.env.example` — 플레이스홀더만 포함 (실제 키 제외)
+- API 키 노출 사고 → 즉시 히스토리 강제 초기화(`--force`) 후 재push
+
+### 10-2. NCP 서버 배포
+- **서버**: ninetynine-app / Ubuntu 24.04 / vCPU 2, RAM 8GB / 공인IP 223.130.151.228
+- **백엔드**: FastAPI + ChromaDB → `/var/www/thesis/backend/` → systemd 상시 실행
+- **프론트**: Vite 빌드 → `/var/www/thesis/frontend/dist/` → nginx 정적 서빙
+- **nginx**: 80포트, `location /api/` → `localhost:8000` 프록시
+- **접속 URL**: `http://223.130.151.228`
+- **패스워드**: `dongguk`
+
+### 10-3. 메인 홈페이지 연동
+- `ninetynine99.co.kr/solutions` → 새 솔루션 카드 추가 (다른 Antigravity 처리)
+- `ninetynine99.co.kr/thesis-advisor/` → 전용 랜딩 페이지 신규 생성
+- Tech Stack 뱃지: React / FastAPI / ChromaDB / RAG 표시
+- 패스워드 안내 및 임시 URL 연결
+
+### 10-4. Vite 서브패스 설정 준비
+- `vite.config.ts`에 `base: process.env.VITE_BASE_PATH || '/'` 추가
+- 향후 `ninetynine99.co.kr/thesis-advisor/` 완전 통합 시:
+  `VITE_BASE_PATH=/thesis-advisor/ npm run build` 후 nginx 재설정
+
+### 10-5. SKILL.md 생성
+- `.agent/skills/academic-dark-ui/SKILL.md`
+- 랜딩 페이지 디자인 시스템 전체 문서화 (색상, 애니메이션, 컴포넌트, 레이아웃 패턴)
