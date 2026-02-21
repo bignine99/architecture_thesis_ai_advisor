@@ -116,12 +116,7 @@ function HistoryView({ onRestore }: { onRestore: (entry: HistoryEntry) => void }
     } catch { setHistory([]) }
   }, [])
 
-  const _remove = (idx: number) => {
-    const next = history.filter((_, i) => i !== idx)
-    setHistory(next)
-    localStorage.setItem(HISTORY_KEY, JSON.stringify(next))
-    setCompare(compare.filter(c => history.indexOf(c) !== idx))
-  }
+
   const clearAll = () => { setHistory([]); setCompare([]); localStorage.removeItem(HISTORY_KEY) }
 
   const toggleCompare = (entry: HistoryEntry) => {
