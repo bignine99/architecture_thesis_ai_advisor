@@ -4,7 +4,7 @@ import LandingPage from './views/LandingPage'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   BookOpen, Database, AlertTriangle, Clock, Wifi,
-  WifiOff, ChevronRight, Trash2, BarChart3,
+  ChevronRight, Trash2, BarChart3,
   ShieldCheck, ShieldQuestion, ShieldAlert, ShieldX, Minus,
   Sun, Moon,
 } from 'lucide-react'
@@ -116,7 +116,7 @@ function HistoryView({ onRestore }: { onRestore: (entry: HistoryEntry) => void }
     } catch { setHistory([]) }
   }, [])
 
-  const remove = (idx: number) => {
+  const _remove = (idx: number) => {
     const next = history.filter((_, i) => i !== idx)
     setHistory(next)
     localStorage.setItem(HISTORY_KEY, JSON.stringify(next))

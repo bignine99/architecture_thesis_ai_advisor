@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Upload, X, FileText, CheckCircle } from 'lucide-react';
+import { Upload, CheckCircle } from 'lucide-react';
 
 interface FileUploadProps {
     onFileUpload: (text: string) => void;
