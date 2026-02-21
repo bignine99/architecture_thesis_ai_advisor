@@ -1,0 +1,21 @@
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\cho\Desktop\Temp\05 Code\260220_Architectural Thesis Advisor AI\backend\app\ingest_benchmark.py", line 169, in <module>
+    ingest_benchmark_papers()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\cho\Desktop\Temp\05 Code\260220_Architectural Thesis Advisor AI\backend\app\ingest_benchmark.py", line 82, in ingest_benchmark_papers
+    print(f"       \u2705 유효")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 7: illegal multibyte sequence
+[경로] PROJECT_ROOT: C:\Users\cho\Desktop\Temp\05 Code\260220_Architectural Thesis Advisor AI
+[경로] BENCHMARK_META: C:\Users\cho\Desktop\Temp\05 Code\260220_Architectural Thesis Advisor AI\data\benchmark_metadata.json
+============================================================
+  벤치마크 논문 RAG 인제스트 시작
+============================================================
+
+총 4개 논문 검증 중...
+
+  [benchmark_87] 벤치마크 논문 87점 (우수 수준)
+       점수: 87점 | 심사결과: 수정 후 조건부 통과 (Minor/Major Revision)

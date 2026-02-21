@@ -1,0 +1,66 @@
+[
+  {
+    "id": "benchmark_87",
+    "pdf_path": ".raw_data/87점.pdf",
+    "title": "벤치마크 논문 87점 (우수 수준)",
+    "user_score": 87,
+    "score_breakdown": {
+      "A_논리성및담론": 26,
+      "B_체계성및방법론": 26,
+      "C_독창성및기여": 18,
+      "D_반증성및한계": 17
+    },
+    "review_decision": "수정 후 조건부 통과 (Minor/Major Revision)",
+    "reviewer_notes": "전반적으로 우수한 논문이다. 연구 논리와 방법론이 탄탄하며 독창성도 인정된다. 소폭 수정 및 보완으로 게재 가능한 수준이다. 이 논문은 해당 분야에서 높은 완성도를 보여주는 기준점(상위 수준)이다.",
+    "field": "건축학 연구",
+    "score_range_label": "상위권 (85~98점 구간)"
+  },
+  {
+    "id": "benchmark_72",
+    "pdf_path": ".raw_data/72점.pdf",
+    "title": "벤치마크 논문 72점 (수정 필요 수준)",
+    "user_score": 72,
+    "score_breakdown": {
+      "A_논리성및담론": 22,
+      "B_체계성및방법론": 22,
+      "C_독창성및기여": 14,
+      "D_반증성및한계": 14
+    },
+    "review_decision": "수정 후 재심 (Revise and Resubmit)",
+    "reviewer_notes": "기본 구조와 논지는 갖추어져 있으나 방법론의 엄밀성과 반증성 측면에서 보완이 필요하다. 독창성이 다소 제한적이며 결론 부분의 논증이 약하다. 수정 후 재심사가 필요한 수준으로, 이 논문은 중간 수준의 기준점(보통 수준)이다.",
+    "field": "건축학 연구",
+    "score_range_label": "중간권 (70~84점 구간)"
+  },
+  {
+    "id": "benchmark_69",
+    "pdf_path": ".raw_data/69점.pdf",
+    "title": "벤치마크 논문 69점 (대폭 수정 필요 수준)",
+    "user_score": 69,
+    "score_breakdown": {
+      "A_논리성및담론": 21,
+      "B_체계성및방법론": 21,
+      "C_독창성및기여": 14,
+      "D_반증성및한계": 13
+    },
+    "review_decision": "대폭적 수정 후 재심 (Reject with Resubmission)",
+    "reviewer_notes": "연구의 방향성은 있으나 방법론과 논증 구조에 상당한 문제가 있다. 체계성이 부족하고 선행연구 검토가 표면적 수준에 머문다. 대폭적인 수정이 필요한 수준으로, 이 논문은 하한 수준의 기준점(미흡 수준)이다.",
+    "field": "건축학 연구",
+    "score_range_label": "하위권 경계 (51~69점 구간)"
+  },
+  {
+    "id": "benchmark_63",
+    "pdf_path": ".raw_data/63점.pdf",
+    "title": "벤치마크 논문 63점 (심각한 문제 수준)",
+    "user_score": 63,
+    "score_breakdown": {
+      "A_논리성및담론": 19,
+      "B_체계성및방법론": 19,
+      "C_독창성및기여": 13,
+      "D_반증성및한계": 12
+    },
+    "review_decision": "대폭적 수정 후 재심 (Reject with Resubmission)",
+    "reviewer_notes": "연구로서의 기본 요건은 갖추었으나 전반적으로 논증이 미흡하고 다수 항목이 부분확인 또는 미확인 수준이다. 연구 목적과 결론의 연결이 약하며 방법론적 근거가 불충분하다. 이 논문은 낮은 수준의 기준점(부실 수준)으로, 63점 이하 논문의 특성을 보여준다.",
+    "field": "건축학 연구",
+    "score_range_label": "하위권 (51~69점 구간 하단)"
+  }
+]
